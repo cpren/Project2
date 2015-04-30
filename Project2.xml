@@ -5,7 +5,7 @@
         <field name="VAR">X</field>
         <value name="VALUE">
           <block type="math_number" id="83">
-            <field name="NUM">0</field>
+            <field name="NUM">2</field>
           </block>
         </value>
         <next>
@@ -83,8 +83,18 @@
                                       <block type="led_select" id="877" inline="true">
                                         <field name="ACTION">ON</field>
                                         <value name="LED">
-                                          <block type="variables_get" id="881">
-                                            <field name="VAR">X</field>
+                                          <block type="math_arithmetic" id="891" inline="true">
+                                            <field name="OP">MINUS</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="881">
+                                                <field name="VAR">X</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="898">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                       </block>
