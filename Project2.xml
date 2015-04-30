@@ -96,6 +96,9 @@
                         <field name="NUM">750</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="movement_stop" id="817"></block>
+                    </next>
                   </block>
                 </next>
               </block>
