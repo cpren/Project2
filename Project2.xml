@@ -92,18 +92,8 @@
                 <next>
                   <block type="robot_delay" id="800" inline="true">
                     <value name="DELAY">
-                      <block type="math_arithmetic" id="805" inline="true">
-                        <field name="OP">DIVIDE</field>
-                        <value name="A">
-                          <block type="variables_get" id="806">
-                            <field name="VAR">X</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="807">
-                            <field name="NUM">0.01</field>
-                          </block>
-                        </value>
+                      <block type="math_number" id="807">
+                        <field name="NUM">750</field>
                       </block>
                     </value>
                   </block>
