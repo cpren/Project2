@@ -210,42 +210,61 @@
                                           </block>
                                         </statement>
                                         <next>
-                                          <block type="oled_linerect" id="1041">
-                                            <field name="OBJECT">RECT</field>
+                                          <block type="oled_drawtext" id="1076">
+                                            <field name="TEXT">0         1          0</field>
                                             <next>
-                                              <block type="oled_setcursor" id="1042" inline="true">
+                                              <block type="oled_setcursor" id="1091" inline="true">
                                                 <value name="STARTX">
-                                                  <block type="math_number" id="1043">
+                                                  <block type="math_number" id="1098">
                                                     <field name="NUM">10</field>
                                                   </block>
                                                 </value>
                                                 <value name="STARTY">
-                                                  <block type="math_number" id="1044">
-                                                    <field name="NUM">20</field>
+                                                  <block type="math_number" id="1105">
+                                                    <field name="NUM">30</field>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="oled_linerect" id="1017">
+                                                  <block type="oled_linerect" id="1041">
                                                     <field name="OBJECT">RECT</field>
                                                     <next>
-                                                      <block type="oled_setcursor" id="1026" inline="true">
+                                                      <block type="oled_setcursor" id="1042" inline="true">
                                                         <value name="STARTX">
-                                                          <block type="math_number" id="1033">
-                                                            <field name="NUM">0</field>
+                                                          <block type="math_number" id="1043">
+                                                            <field name="NUM">10</field>
                                                           </block>
                                                         </value>
                                                         <value name="STARTY">
-                                                          <block type="math_number" id="1040">
-                                                            <field name="NUM">0</field>
+                                                          <block type="math_number" id="1044">
+                                                            <field name="NUM">20</field>
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="robot_delay" id="1046" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="1053">
-                                                                <field name="NUM">250</field>
+                                                          <block type="oled_linerect" id="1017">
+                                                            <field name="OBJECT">RECT</field>
+                                                            <next>
+                                                              <block type="oled_setcursor" id="1026" inline="true">
+                                                                <value name="STARTX">
+                                                                  <block type="math_number" id="1033">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="STARTY">
+                                                                  <block type="math_number" id="1040">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="robot_delay" id="1046" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="math_number" id="1053">
+                                                                        <field name="NUM">250</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
                                                               </block>
-                                                            </value>
+                                                            </next>
                                                           </block>
                                                         </next>
                                                       </block>
