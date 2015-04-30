@@ -97,7 +97,24 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="817"></block>
+                      <block type="variables_set" id="827" inline="true">
+                        <field name="VAR">X</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="834" inline="true">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <block type="variables_get" id="838">
+                                <field name="VAR">X</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="851">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
                     </next>
                   </block>
                 </next>
