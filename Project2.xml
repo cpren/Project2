@@ -263,7 +263,7 @@
                       <block type="logic_negate" id="491" inline="true">
                         <value name="NUMBER">
                           <block type="logic_compare" id="505" inline="true">
-                            <field name="OP">GT</field>
+                            <field name="OP">EQ</field>
                             <value name="A">
                               <block type="variables_get" id="517">
                                 <field name="VAR">X</field>
@@ -271,7 +271,7 @@
                             </value>
                             <value name="B">
                               <block type="math_number" id="524">
-                                <field name="NUM">6</field>
+                                <field name="NUM">10000</field>
                               </block>
                             </value>
                           </block>
