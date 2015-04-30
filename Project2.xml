@@ -1,132 +1,82 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="121" inline="true" x="-211" y="-42">
-    <field name="VAR">Y</field>
+  <block type="variables_set" id="76" inline="true" x="-220" y="25">
+    <field name="VAR">X</field>
     <value name="VALUE">
-      <block type="math_number" id="128">
-        <field name="NUM">10</field>
+      <block type="math_number" id="83">
+        <field name="NUM">0</field>
       </block>
     </value>
     <next>
-      <block type="variables_set" id="76" inline="true">
-        <field name="VAR">X</field>
-        <value name="VALUE">
-          <block type="math_number" id="83">
-            <field name="NUM">0</field>
+      <block type="controls_repeat" id="647" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="654">
+            <field name="NUM">2</field>
           </block>
         </value>
-        <next>
-          <block type="controls_repeat" id="647" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="654">
-                <field name="NUM">2</field>
+        <statement name="DO">
+          <block type="controls_whileUntil" id="67" inline="false">
+            <field name="MODE">WHILE</field>
+            <value name="NUMBER">
+              <block type="logic_compare" id="96" inline="true">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="variables_get" id="100">
+                    <field name="VAR">X</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="110">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
               </block>
             </value>
             <statement name="DO">
-              <block type="controls_whileUntil" id="67" inline="false">
-                <field name="MODE">WHILE</field>
-                <value name="NUMBER">
-                  <block type="logic_operation" id="74" inline="true">
-                    <field name="OP">LAND</field>
-                    <value name="A">
-                      <block type="logic_compare" id="96" inline="true">
-                        <field name="OP">LT</field>
-                        <value name="A">
-                          <block type="variables_get" id="100">
-                            <field name="VAR">X</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="110">
-                            <field name="NUM">5</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="logic_compare" id="117" inline="true">
-                        <field name="OP">GT</field>
-                        <value name="A">
-                          <block type="variables_get" id="134">
-                            <field name="VAR">Y</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="141">
-                            <field name="NUM">8</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
+              <block type="movement_setmotors" id="10" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="29">
+                    <field name="NUM">20</field>
                   </block>
                 </value>
-                <statement name="DO">
-                  <block type="movement_setmotors" id="10" inline="true">
-                    <value name="BOTHMOVLEFT">
-                      <block type="math_number" id="29">
-                        <field name="NUM">20</field>
-                      </block>
-                    </value>
-                    <value name="BOTHMOVRIGHT">
-                      <block type="math_number" id="36">
-                        <field name="NUM">100</field>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="36">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="robot_delay" id="22" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="43">
+                        <field name="NUM">750</field>
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="22" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="43">
-                            <field name="NUM">750</field>
-                          </block>
-                        </value>
+                      <block type="movement_left" id="164">
                         <next>
-                          <block type="movement_left" id="164">
+                          <block type="robot_delay" id="166" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="173">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="robot_delay" id="166" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="173">
-                                    <field name="NUM">1000</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="variables_set" id="182" inline="true">
-                                    <field name="VAR">X</field>
-                                    <value name="VALUE">
-                                      <block type="math_arithmetic" id="195" inline="true">
-                                        <field name="OP">ADD</field>
-                                        <value name="A">
-                                          <block type="variables_get" id="201">
-                                            <field name="VAR">X</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="208">
-                                            <field name="NUM">2</field>
-                                          </block>
-                                        </value>
+                              <block type="variables_set" id="182" inline="true">
+                                <field name="VAR">X</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="195" inline="true">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="201">
+                                        <field name="VAR">X</field>
                                       </block>
                                     </value>
-                                    <next>
-                                      <block type="variables_set" id="214" inline="true">
-                                        <field name="VAR">Y</field>
-                                        <value name="VALUE">
-                                          <block type="math_arithmetic" id="221" inline="true">
-                                            <field name="OP">MINUS</field>
-                                            <value name="A">
-                                              <block type="variables_get" id="233">
-                                                <field name="VAR">Y</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="240">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
+                                    <value name="B">
+                                      <block type="math_number" id="208">
+                                        <field name="NUM">2</field>
                                       </block>
-                                    </next>
+                                    </value>
                                   </block>
-                                </next>
+                                </value>
                               </block>
                             </next>
                           </block>
@@ -134,13 +84,93 @@
                       </block>
                     </next>
                   </block>
-                </statement>
+                </next>
               </block>
             </statement>
             <next>
-              <block type="movement_stop" id="664"></block>
+              <block type="controls_if" id="671" inline="false">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_operation" id="74" inline="true">
+                    <field name="OP">LAND</field>
+                    <value name="A">
+                      <block type="logic_compare" id="682" inline="true">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="variables_get" id="688">
+                            <field name="VAR">X</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="695">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="logic_compare" id="734" inline="true">
+                        <field name="OP">LT</field>
+                        <value name="A">
+                          <block type="variables_get" id="740">
+                            <field name="VAR">X</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="747">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="variables_set" id="701" inline="true">
+                    <field name="VAR">X</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="708" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="variables_get" id="714">
+                            <field name="VAR">X</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="721">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="variables_set" id="748" inline="true">
+                    <field name="VAR">X</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="749" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="variables_get" id="750">
+                            <field name="VAR">X</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="751">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
             </next>
           </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="664"></block>
         </next>
       </block>
     </next>
