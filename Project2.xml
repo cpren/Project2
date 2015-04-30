@@ -223,7 +223,7 @@
                                         </value>
                                         <value name="B">
                                           <block type="math_number" id="425">
-                                            <field name="NUM">500</field>
+                                            <field name="NUM">250</field>
                                           </block>
                                         </value>
                                       </block>
@@ -234,7 +234,7 @@
                                           <block type="robot_delay" id="446" inline="true">
                                             <value name="DELAY">
                                               <block type="math_arithmetic" id="459" inline="true">
-                                                <field name="OP">ADD</field>
+                                                <field name="OP">MULTIPLY</field>
                                                 <value name="A">
                                                   <block type="variables_get" id="477">
                                                     <field name="VAR">Y</field>
@@ -242,7 +242,7 @@
                                                 </value>
                                                 <value name="B">
                                                   <block type="math_number" id="484">
-                                                    <field name="NUM">2000</field>
+                                                    <field name="NUM">200</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -375,6 +375,9 @@
                 </next>
               </block>
             </statement>
+            <next>
+              <block type="movement_stop" id="664"></block>
+            </next>
           </block>
         </next>
       </block>
