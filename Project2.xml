@@ -223,7 +223,7 @@
                                         </value>
                                         <value name="B">
                                           <block type="math_number" id="425">
-                                            <field name="NUM">1000</field>
+                                            <field name="NUM">500</field>
                                           </block>
                                         </value>
                                       </block>
