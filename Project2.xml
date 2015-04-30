@@ -47,23 +47,23 @@
                           </block>
                         </value>
                         <next>
-                          <block type="oled_cleardisplay" id="860">
+                          <block type="variables_set" id="76" inline="true">
+                            <field name="VAR">X</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="83">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="variables_set" id="76" inline="true">
-                                <field name="VAR">X</field>
-                                <value name="VALUE">
-                                  <block type="math_number" id="83">
-                                    <field name="NUM">2</field>
+                              <block type="controls_repeat" id="951" inline="true">
+                                <value name="TIMES">
+                                  <block type="math_number" id="958">
+                                    <field name="NUM">5</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="controls_repeat" id="951" inline="true">
-                                    <value name="TIMES">
-                                      <block type="math_number" id="958">
-                                        <field name="NUM">5</field>
-                                      </block>
-                                    </value>
-                                    <statement name="DO">
+                                <statement name="DO">
+                                  <block type="oled_cleardisplay" id="860">
+                                    <next>
                                       <block type="controls_repeat" id="647" inline="true">
                                         <value name="TIMES">
                                           <block type="math_number" id="654">
@@ -209,12 +209,31 @@
                                             </next>
                                           </block>
                                         </statement>
+                                        <next>
+                                          <block type="oled_linerect" id="1017">
+                                            <field name="OBJECT">RECT</field>
+                                            <next>
+                                              <block type="oled_setcursor" id="1026" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="math_number" id="1033">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="math_number" id="1040">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
-                                    </statement>
-                                    <next>
-                                      <block type="movement_stop" id="664"></block>
                                     </next>
                                   </block>
+                                </statement>
+                                <next>
+                                  <block type="movement_stop" id="664"></block>
                                 </next>
                               </block>
                             </next>
