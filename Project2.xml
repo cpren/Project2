@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="led_select" id="911" inline="true" x="-821" y="-1049">
+  <block type="led_select" id="911" inline="true" x="-476" y="-704">
     <field name="ACTION">OFF</field>
     <value name="LED">
       <block type="math_number" id="923">
