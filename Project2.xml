@@ -277,6 +277,15 @@
                                                                                 <field name="NUM">0</field>
                                                                               </block>
                                                                             </value>
+                                                                            <next>
+                                                                              <block type="robot_delay" id="1139" inline="true">
+                                                                                <value name="DELAY">
+                                                                                  <block type="math_number" id="1146">
+                                                                                    <field name="NUM">2000</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
