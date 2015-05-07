@@ -61,7 +61,7 @@
                                   <block type="controls_repeat" id="951" inline="true">
                                     <value name="TIMES">
                                       <block type="math_number" id="958">
-                                        <field name="NUM">3</field>
+                                        <field name="NUM">2</field>
                                       </block>
                                     </value>
                                     <statement name="DO">
