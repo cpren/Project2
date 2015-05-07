@@ -261,6 +261,16 @@
                                                                         <field name="NUM">250</field>
                                                                       </block>
                                                                     </value>
+                                                                    <next>
+                                                                      <block type="led_select" id="1114" inline="true">
+                                                                        <field name="ACTION">ON</field>
+                                                                        <value name="LED">
+                                                                          <block type="math_number" id="1121">
+                                                                            <field name="NUM">5</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
